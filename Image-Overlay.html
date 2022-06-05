@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image-Hover-Overlay</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.A {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+.B {
+    left:0;
+    right: 0;
+    top:0;
+    bottom:100%;
+    background-color: purple;
+    width:100%;
+    position: absolute;
+    transition:0.5s;
+    height: 0%;
+}
+.A:hover .B {
+    height: 100%;
+    bottom: 0%;
+    
+    
+}
+#S {
+    display: none;
+}
+.A:hover #S {
+    display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="A">
+    <div class="B"><h1 id="S" style="color: white;text-align:center">$upmehti</h1></div><img src="https://w0.peakpx.com/wallpaper/994/216/HD-wallpaper-bape-shark-supreme.jpg" style="width:400px;height:400px">
+</div>
+
+</body>
+</html>
